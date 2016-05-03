@@ -1,0 +1,60 @@
+package:
+  name: left-pad
+  version: "0.0.3"
+
+source:
+  fn: left-pad-0.0.3.tar.gz
+  url: https://pypi.python.org/packages/a0/34/cd668981dc6818d8a39f1185af8113268ddc71d99b0ba4aa8ceee2a123e7/left-pad-0.0.3.tar.gz
+  md5: 91d24f0309ed579926d760ecca71eefd
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - left-pad = left-pad:main
+    #
+    # Would create an entry point called left-pad that calls left-pad.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+# test:
+  # Python imports
+  # imports:
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://docs.python.org/2/library/stdtypes.html#str.rjust
+  license: BSD
+  summary: 'Pad a string to the left with any number of characters'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
